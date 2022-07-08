@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Media Object</title>
+        <link rel="Icon" href="../assets/BridgeLabz-Logo.png">
+        <style>
+            body
+            {
+                width: 100vh;
+                height: 200vh;
+            }
+            .image
+            {
+                width: 20vh;
+                height: 10vh;
+                padding: 10px;
+            }
+            .mainContainer
+            {
+                display: flex;
+                background: gray;
+                padding: 10px;
+            }
+            .nestedContainer
+            {
+                display: flex;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="mainContainer">
+            <img class="image" src="../assets/siberian-husky.jpg">
+            <section class="section">
+                <h2>Dog</h2>
+                <p>The dog or domestic dog (Canis familiaris or Canis lupus familiaris) is a domesticated descendant of the wolf, and is characterized by an upturning 
+                tail. The dog is derived from an ancient, extinct wolf, and the modern wolf is the dog's nearest living relative.</p>
+            
+                <div class="nestedContainer">
+                    <img class="image" src="../assets/eagle.jpg">
+                    <section class="section">
+                        <h2>Eagle</h2>
+                        <p>Eagle is the common name for many large birds of prey of the family Accipitridae. Eagles belong to several groups of genera, some of which are 
+                            closely related. Most of the 60 species of eagle are from Eurasia and Africa.</p>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

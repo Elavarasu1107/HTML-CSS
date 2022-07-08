@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Website Layout</title>
+        <link rel="Shortcut Icon" href="../assets/BridgeLabz-Logo.png">
+        <style>
+            body
+            {
+                display: flex;
+            }
+            .main
+            {
+                flex: 8;
+                flex-direction: column;
+            }
+            .sideBarLeft
+            {
+                background: violet;
+                flex-flow: row wrap;
+                flex: 1;
+                padding: 10px;
+                align-content: center;
+                font-weight: bold;
+            }
+            .header
+            {
+                flex-flow: column wrap;
+                align-content: center;
+                background: darkcyan;
+                font-weight: bold;
+                font-family: 'Times New Roman', Times, serif;
+                color: azure;
+                padding: 5px;
+            }
+            .footer
+            {
+                flex-flow: column wrap;
+                align-content: center;
+                background: goldenrod;
+                font-weight: bolder;
+                font-family: 'Times New Roman', Times, serif;
+                color: azure;
+                padding: 5px;
+            }
+            .mainarticle
+            {
+                display: flex;
+                flex-direction: column;
+                background: gray;
+                flex: 5;
+            }
+            article
+            {
+                flex-direction: column;
+                background: lightgreen;
+                margin: 5px;
+            }
+            .mainContent
+            {
+                display: flex;
+                flex-direction: row;
+            }
+            .sideBarRight
+            {
+                background: green;
+                flex-flow: row wrap;
+                flex: 1;
+                padding: 10px;
+                align-content: center;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <sideBar class="sideBarLeft"><p>Left Side Bar</p></sideBar> 
+        <div class="main"> 
+            <header class="header"><h1>Webpage-Design</h1></header>
+            <section class="mainContent">
+                <mainarticle class="mainarticle">
+                <article>
+                    <h2>Developer</h2>
+                    <p>A developer is an individual that builds and create software and applications. He or she writes, debugs and executes the source code of 
+                        a software application.</p>
+                </article>
+                <article>
+                    <h2>Software Tester</h2>
+                    <P>A software tester is an individual that tests software for bugs, errors, defects or any problem that can affect the performance of 
+                        computer software or an application.</P>
+                </article>
+                <article>
+                    <h2>Administrator</h2>
+                    <p>An IT Administrator, otherwise known as a System Administrator, is responsible for the upkeep, configuration, and reliable operation of 
+                        client computer systems, servers, and data security systems.</p>
+                </article> 
+                </mainarticle>    
+                <sideBar class="sideBarRight"><p>Right Side Bar</p></sideBar>
+            </section> 
+            <footer class="footer"><h1>Footer</h1></Footer>
+        </div>
+    </body>
+</html>

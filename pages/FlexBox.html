@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Flex Box</title>
+        <style>
+            body
+            {
+                padding: 2em;
+            }
+            .header
+            {
+                display: flex;
+                flex-flow: column wrap;
+                background: rgb(4, 204, 61);
+                align-content: center;
+                font-weight: bold;
+                padding: 10px;
+            }
+            .footer
+            {
+                display: flex;
+                flex-flow: column wrap;
+                background: rgb(204, 4, 84);
+                align-content: center;
+                font-weight: bold;
+                padding: auto;
+            }
+            .main
+            {
+                display: flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+            }
+            .mainContent
+            {
+                text-align: left;
+                background: rgb(6, 211, 225);
+            }
+            article
+            {
+                padding: 10px;
+                margin: 10px;
+                background: rebeccapurple;
+            }
+            .sideBarLeft
+            {
+                background: burlywood;
+            }
+            .sideBarRight
+            {
+                background: rgb(165, 160, 170);
+            }
+            .sideBar{ flex: 1 0 0; border: 0px solid green;}
+            .mainContent{ flex: 3 0px;}
+            .sideBarLeft{ order: 1;}
+            .mainContent{ order: 2;}
+            .sideBarRight{ order: 3;}
+        </style>
+    </head>
+    <body>
+        <header class="header"><h1>Flex-Box</h1></header>
+        <div class="main">
+            <section class="mainContent">
+                <article>
+                    <h2>Developer</h2>
+                    <p>A developer is an individual that builds and create software and applications. He or she writes, debugs and executes the source code of 
+                        a software application.</p>
+                </article>
+                <article>
+                    <h2>Software Tester</h2>
+                    <P>A software tester is an individual that tests software for bugs, errors, defects or any problem that can affect the performance of 
+                        computer software or an application.</P>
+                </article>
+                <article>
+                    <h2>Administrator</h2>
+                    <p>An IT Administrator, otherwise known as a System Administrator, is responsible for the upkeep, configuration, and reliable operation of 
+                        client computer systems, servers, and data security systems.</p>
+                </article>
+            </section>
+            <sideBar class="sideBar sideBarLeft"><div class="center"><p>Left Side Bar</p></div></sideBar>
+            <sideBar class="sideBar sideBarRight"><div class="center"><p>Right Side Bar</p></div></sideBar>
+        </div>
+        <footer class="footer"><h1>Footer</h1></Footer>
+    </body>
+</html>

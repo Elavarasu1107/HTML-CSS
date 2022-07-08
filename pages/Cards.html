@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Cards Layout</title>
+        <link rel="Shortcut Icon" href="../assets/BridgeLabz-Logo.png">
+        <style>
+            .header
+            {
+                display: flex;
+                background: plum;
+                align-content: center;
+                flex-flow: column wrap;
+                color: rebeccapurple;
+            }
+            .cointainer
+            {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .cards
+            {
+                background: whitesmoke;
+                margin: 20px;
+                width: 200px;
+                border-radius: 15px;
+                padding: 20px;
+            }
+            .image
+            {
+                background-color: aqua;
+                height: 150px;
+                margin: 0;
+                background-size: cover;
+            }
+            .eagle
+            {
+                background-image: url('../assets/eagle.jpg');
+                border-radius: 10px;
+            }
+            .car
+            {
+                background-image: url('../assets/Car.jpg');
+                border-radius: 10px;
+            }
+            .bike
+            {
+                background-image: url('../assets/Kawasaki.jpg');
+                border-radius: 10px;
+            }
+            .dog
+            {
+                background-image: url('../assets/siberian-husky.jpg');
+                border-radius: 10px;
+            }
+            .train
+            {
+                background-image: url('../assets/Train.jpg');
+                border-radius: 10px;
+            }
+            .dc
+            {
+                background-image: url('../assets/Forever_Evil.jpg');
+                border-radius: 10px;
+            }
+            .anchor
+            {
+                background: wheat;
+                color: black;
+                display: block;
+                text-align: center;
+                padding: 10px 10px;
+                border-radius: 10px 10px;
+                text-decoration: none;
+            }
+            .anchor:hover
+            {
+                background: white;
+                color: brown;
+                transition: all 1s ease;
+            }
+            .cards:hover
+            {
+                background: gray;
+                color: white;
+                transition: all 1s ease;
+            }
+            h1
+            {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header"><h1>Cards</h1></header>
+        <section class="cointainer">
+            <div class="cards">
+                <div class="image eagle"></div>
+                <h1>Eagle</h1>
+                <p>Eagle is the common name for many large birds of prey of the family Accipitridae. Eagles belong to several groups of genera, some of which are 
+                    closely related. Most of the 60 species of eagle are from Eurasia and Africa.</p>
+                <a class="anchor" href="https://en.wikipedia.org/wiki/Eagle">Read More</a>
+            </div>
+            <div class="cards">
+                <div class="image car"></div>
+                <h1>Car</h1>
+                <p> car (or automobile) is a wheeled motor vehicle that is used for transportation. Most definitions of cars say that they run primarily on roads, 
+                    seat one to eight people, have four wheels, and mainly transport people instead of goods.</p>
+                    <a class="anchor" href="https://en.wikipedia.org/wiki/Car">Read More</a>
+            </div>
+            <div class="cards">
+                <div class="image bike"></div>
+                <h1>Bike</h1>
+                <p>A motorcycle, often called a motorbike, bike, cycle is a two- or three-wheeled motor vehicle.Motorcycle design varies greatly to suit a 
+                    range of different purposes: long-distance travel, commuting, cruising, sport (including racing), and off-road riding.</p>
+                    <a class="anchor" href="https://en.wikipedia.org/wiki/Motorcycle">Read More</a>
+            </div>
+        </section>  
+        <section class="cointainer">
+            <div class="cards">
+                <div class="image dog"></div>
+                <h1>Dog</h1>
+                <p>The dog or domestic dog (Canis familiaris or Canis lupus familiaris) is a domesticated descendant of the wolf, and is characterized by an upturning 
+                    tail. The dog is derived from an ancient, extinct wolf, and the modern wolf is the dog's nearest living relative.</p>
+                    <a class="anchor" href="https://en.wikipedia.org/wiki/Dog">Read More</a>
+            </div>
+            <div class="cards">
+                <div class="image train"></div>
+                <h1>Train</h1>
+                <p>In rail transport, a train is a series of connected vehicles that run along a railway track and transport people or freight. The word train comes 
+                    from the Old French trahiner, derived from the Latin trahere meaning "to pull, to draw".</p>
+                    <a class="anchor" href="https://en.wikipedia.org/wiki/Train">Read More</a>
+            </div>
+            <div class="cards">
+                <div class="image dc"></div>
+                <h1>DC Comics</h1>
+                <p>DC Comics is one of the largest and oldest American comic book companies, with their first comic under the DC banner being published in 1937.
+                     The majority of its publications take place within the fictional DC Universe and feature numerous culturally iconic heroic characters.</p>
+                    <a class="anchor" href="https://en.wikipedia.org/wiki/Motorcycle">Read More</a>
+            </div>
+        </section>  
+    </body>
+</html>
