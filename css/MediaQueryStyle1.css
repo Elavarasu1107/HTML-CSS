@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    max-width: 100vw;
+    background: whitesmoke;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+}
+.menu{
+    display: flex;
+    gap: 4vw;
+    padding-right: 5px;
+}
+.logo{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+.menu a{
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.mainImage{
+    height: 40%;
+    font-size: 50px;
+    background-image: url('../assets/mountain-lakes.jpg');
+    background-size: cover;
+}
+.imageText{
+    padding-left: 18%;
+    padding-top: 3%;
+}
+.content{
+    height: 10%;
+    text-align: center;
+    font-style: italic;
+    font-size: 25px;
+}
+.grid{
+    display: flex;
+    height: 40%;
+    gap: 10px;
+}
+.services{
+    display: flex;
+    object-fit: contain;
+    flex-flow: column wrap;
+    text-align: center;
+    border-radius: 40px;
+}
+.services:hover{
+    box-shadow: 5px 5px 5px gray;
+    background: wheat;
+    color: brown;
+    transition: 0.5s;
+}
+.services img{
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    margin: 15px auto;
+}
+
+@media screen and (max-width:768px){
+    .imageText{
+        padding-left: 10%;
+        padding-top: 2%;
+    }
+    .content{
+        height: 10%;
+        text-align: center;
+        font-style: italic;
+        font-size: 19px;
+    }
+    .grid{
+        display: flex;
+        height: 50%;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:576px){
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10%;
+        width: 113vw;
+    }
+    .imageText{
+        padding-left: 10%;
+        padding-top: 2%;
+    }
+    .mainImage{
+        height: 40%;
+        font-size: 50px;
+        background-image: url(../assets/mountain-lakes.jpg);
+        background-size: cover;
+        width: 113vw;
+    }
+    .content{
+        height: 10%;
+        text-align: center;
+        font-style: italic;
+        font-size: 17px;
+        width: 113vw;
+    }
+    .grid{
+        display: flex;
+        height: 50%;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:360px){
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10%;
+        width: 174vw;
+    }
+    .mainImage {
+        height: 40%;
+        font-size: 50px;
+        background-image: url(../assets/mountain-lakes.jpg);
+        background-size: cover;
+        width: 175vw;
+    }
+    .imageText {
+        padding-left: 10%;
+        padding-top: 2%;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .content {
+        height: 13%;
+        text-align: center;
+        font-style: italic;
+        font-size: 26px;
+        width: 174vw;
+    }
+    .grid {
+        display: contents;
+        height: 50%;
+        gap: 10px;
+    }
+    .services {
+        display: flex;
+        object-fit: contain;
+        flex-flow: column wrap;
+        text-align: center;
+        border-radius: 40px;
+        width: 170vw;
+        margin: 1px 10px 10px 10px;
+    }
+    .services p{
+        font-size: 25px;
+    }
+    .services h3{
+        font-size: 30px;
+    }
+    .footer{
+        height: 13%;
+        text-align: center;
+        font-style: italic;
+        font-size: 26px;
+        width: 174vw;
+        margin-top: 20px;
+    }
+}
