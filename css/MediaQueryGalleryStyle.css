@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+h1{
+    text-align: center;
+}
+.section{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px;
+}
+.row{
+    flex: 33%;
+    max-width: 33%;
+    padding: 0px 4px;
+}
+.row img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.row img:hover{
+    box-shadow: 5px 5px 5px rgb(12, 3, 3);
+}
+
+@media screen and (max-width:900px) {
+    .row{
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width:576px) {
+    .row{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
